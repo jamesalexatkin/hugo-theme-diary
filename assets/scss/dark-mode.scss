@@ -2,15 +2,10 @@
 
 $light-accent: lighten($color-accent, 10%);
 $deep-light-accent: lighten($color-accent, 30%);
-// $light-accent: #56635f;
-// $deep-light-accent: #425047;
-
 $dark-mode-text: darken(#fff, 10%);
-// $dark-mode-text: #D3C6AA;
 
-$dark-mode-back-container-background: #1E2326;
-$dark-mode-front-container-background: #1E2326;
-// $dark-mode-front-container-background: #272E33;
+$dark-mode-back-container-background: #212121;
+$dark-mode-front-container-background: #282828;
 
 body.night {
   background: $dark-mode-back-container-background;
@@ -276,31 +271,6 @@ body.night {
       color: white;
       span {
         color: white;
-      }
-    }
-  }
-
-  
-  
-  .post-list-container {
-    box-shadow: 0 0 1px rgba(255, 255, 255, 1);
-
-    @media screen and (max-width: $single-column-max-width) {
-      min-height: unset;
-      padding: 0;
-      box-shadow: 0 0 1px rgba(255, 255, 255, 1);
-    }
-    &,
-    > * {
-  
-      &:not(:last-child) {
-        .post-item {
-          border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  
-          @media screen and (max-width: $single-column-max-width) {
-            //border-bottom: none !important;
-          }
-        }
       }
     }
   }
