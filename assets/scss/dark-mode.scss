@@ -8,9 +8,12 @@ $deep-light-accent: lighten($color-accent, 30%);
 $dark-mode-text: darken(#fff, 10%);
 // $dark-mode-text: #D3C6AA;
 
-$dark-mode-back-container-background: #1E2326;
-$dark-mode-front-container-background: #1E2326;
+$dark-mode-back-container-background: #2e3440;
+$dark-mode-front-container-background: #2e3440;
 // $dark-mode-front-container-background: #272E33;
+
+
+$nav-item-active-background-alpha: 0.03;
 
 body.night {
   background: $dark-mode-back-container-background;
@@ -121,6 +124,15 @@ body.night {
   .stream-container {
     .post-head-wrapper-text-only * {
       color: $dark-mode-text;
+
+      .post-title {
+        
+        .post-meta {
+          $nav-item-active-background-alpha: 0.13;
+         
+          // border-color: $dark-mode-text;
+        }
+      }
     }
     .post {
       background: $dark-mode-front-container-background;
@@ -283,7 +295,7 @@ body.night {
   
   
   .post-list-container {
-    box-shadow: 0 0 1px rgba(255, 255, 255, 1);
+    // box-shadow: 0 0 1px rgba(255, 255, 255, 1);
 
     @media screen and (max-width: $single-column-max-width) {
       min-height: unset;
