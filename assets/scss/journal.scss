@@ -938,6 +938,11 @@ a {
           border-radius: 5px;
           overflow: hidden;
         }
+        ul {
+          font-family: $main-text-font-list;
+          font-size: 1.125rem;
+          line-height: 2;
+        }
         @media screen and (max-width: $single-column-max-width) {
           font-size: $single-column-post-body-size;
         }
